@@ -9,6 +9,9 @@
         <!-- Fonts -->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Scripts -->
+        <script>
+            let ajaxUrl = location.origin;
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -28,20 +31,30 @@
                     <?php } ?>    
                 <?php } ?>    
                 
-                <div class="title m-b-md">
+                <div class="content-form">
                     Hi, my friend send me your email, please 😜
                 </div>
                 
                 <div class="content-form">
-                    <form method="post" action="http://tambourine.test/save" >    
-                        <input name="email" id="email" type="email" placeholder="Email" value="carincon@gmail.com" required >
+                    <form method="post" action="/save" >    
+                        <input name="email" id="email" type="email" placeholder="Email" value="" required >
                         <button type="submit" value="Submit">Submit</button>
                     </form>
+                    <br/>
+                </div>
+
+                <div class="content-form">
+                    <a id="show" href="#">show people</a>
+                </div>
+
+                <div id="results">
+
                 </div>
                 
             </div>
         </div>
         <!-- footer scripts -->
         <script type="text/javascript" src="assest/js/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="assest/js/home.js"></script>
     </body>
 </html>

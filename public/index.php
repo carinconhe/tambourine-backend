@@ -13,6 +13,9 @@
         case '/save' :
             $index->save();
             break;
+        case '/ajaxRequest/exe/':
+            echo $index->ajaxRequest();
+            break;
         default:
             $index->error();
             break;

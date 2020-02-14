@@ -19,6 +19,10 @@
             require_once("../app/views/home.php");
         }
 
+        public function ajaxRequest(){
+            return json_encode(['success'=>true,'results'=>$this->people->getPeople()]);
+        }
+
         public function error(){
             http_response_code(404);
             require_once("../app/views/404.php");
