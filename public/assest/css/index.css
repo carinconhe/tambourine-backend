@@ -1,0 +1,55 @@
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+  }
+  
+  /**
+   * Remove default margin.
+   */
+  body {
+    margin: 0;
+  }
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.content{
+    background-color: rgba(242, 242, 242, 0.5);
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 700px;
+    height: auto;
+    align-content: flex-start;
+  }
+  .content-form{
+    background-color: rgba(242, 242, 242, 0.5);
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    align-content: flex-start;
+  }
+
+  .content-form.color-red {
+    color: red;
+  }
+
+a:active,
+a:hover {
+    outline: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
