@@ -13,7 +13,6 @@ class GameController {
             return  "Winner Player 1.<br>";
         }else
             return "Winner Player 2.<br>";
-        
     }
 
 }
